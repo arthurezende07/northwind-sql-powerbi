@@ -4,7 +4,7 @@ Projeto de Análise de Dados com SQLite Online e Power BI, utilizando dataset No
 O Desenvolvimento consiste em simular uma situação real, a partir da realização de consultas SQL para criação de views e tratamento de dados. Posteriormente, foi realizado a visualização através de dashboards interativos no Power BI.
 
 ## Contexto
-Northwind Traders é uma empresa fictícia de importação e exportação de alimentos especiais para empresas, representando um negócio B2B. Dessa forma, cabe ao júnior analisar, identificar e gerar insights que possam agregar valor a empresa.
+Northwind Traders é uma empresa fictícia de importação e exportação de alimentos especiais para empresas, representando um negócio B2B internacional. Dessa forma, cabe ao júnior analisar, identificar e gerar insights que possam agregar valor a empresa.
 
 ## Ferramentas
 - SQLite Online - importação, limpeza via views e queries de análise.
