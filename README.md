@@ -47,7 +47,7 @@ Com a realização de todo o fluxo de tratamento e visuzalização de dados, foi
 - **Distribuição Geográfica**: É nítido que o transporte no continente europeu merece reformulações. Países vizinhos que possuem receitas similares ou até maiores estão recebendo seus produtos em 50% a mais do tempo. Tais ações podem gerar perda de cliente que gera alta receita para a empresa.
   - **Ação**: Revisão de rotas com transportadora para garantir que os países sejam abastecidos de forma uniforme.
 
-- **Alta concentração em poucos clientes**: Através da tabela de Receita por Cliente, é possível identificar que a concentração de maior parte da receita está entre trÊs empresas.
+- **Alta concentração em poucos clientes**: Através da tabela de Receita por Cliente, é possível identificar que a concentração de maior parte da receita está entre três empresas.
   - **Ação 1**: Criar plano de diversificação de carteira de cliente para diminuir a concentração de clientes em até 12 meses.
   - **Ação 2**: Manter contato regular com as maiores compradoras a fim de fidelizar esses clientes
   - **Ação 3**: Prestar serviços para pequenas empresas. São mercados com potenciais inexplorados que podem vir a ser grandes empresas.
