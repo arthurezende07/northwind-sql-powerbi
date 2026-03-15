@@ -44,7 +44,7 @@ Com a realização de todo o fluxo de tratamento e visuzalização de dados, foi
   - **Ação 1**: Reavaliar categorias e produtos vendidos. É possível reduzir a venda de itens de categorias inferiores, por serem commodities ou artigos de apoio. Assim, a Northwind agregará maior valor aos produtos que     mais vende.
   - **Ação 2**: Há possibilidade de agrupamento de produtos tier A com tier C, a fim de garantir maior valor e escoar estoque de produtos que tendem a decrescer.
 
-- **Distribuição Geográfica**: É nítido que o transporte no continente europeu merece reformulações. Países vizinhos que possuem receitas similares ou até maiores estão recebendo seus produtos em 50% a mais do tempo. Tais ações podem gerar perda de cliente que gera alta receita para a empresa.
+- **Distribuição Geográfica**: É nítido que o transporte no continente europeu merece reformulações. Países vizinhos que possuem receitas similares ou até maiores estão recebendo seus produtos em 50% a mais do tempo. Tais ações podem ocasionar perda de cliente que gera alta receita para a empresa.
   - **Ação**: Revisão de rotas com transportadora para garantir que os países sejam abastecidos de forma uniforme.
 
 - **Alta concentração em poucos clientes**: Através da tabela de Receita por Cliente, é possível identificar que a concentração de maior parte da receita está entre três empresas.
