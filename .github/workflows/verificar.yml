@@ -1,0 +1,25 @@
+name: verificar
+
+# Roda o portao a cada push e a cada PR, inclusive quando so o README muda:
+# mexer no texto sem mexer no dado e exatamente um dos casos que ele pega.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  portao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # executa as sete queries contra o database/SQLite.db versionado e compara
+      # com os CSVs de data/exports/
+      - run: python verificar.py

@@ -1,4 +1,6 @@
 # Northwind Traders - Análise de Dados
+
+[![verificar](https://github.com/arthurezende07/northwind-sql-powerbi/actions/workflows/verificar.yml/badge.svg)](https://github.com/arthurezende07/northwind-sql-powerbi/actions/workflows/verificar.yml)
 Projeto de Análise de Dados com SQLite Online e Power BI, utilizando dataset Northwind Traders (kaggle).
 
 O Desenvolvimento consiste em simular uma situação real, a partir da realização de consultas SQL para criação de views e tratamento de dados. Posteriormente, foi realizado a visualização através de dashboards interativos no Power BI.
@@ -33,6 +35,21 @@ Northwind Traders é uma empresa fictícia de importação e exportação de ali
 - **Página 2** - Clientes, geografia e eficiência operacional
 <img width="1451" height="805" alt="image" src="https://github.com/user-attachments/assets/4d80c02b-961d-4b2f-8452-3865c3c717d4" />
 
+## Verificação
+
+```bash
+pip install -r requirements.txt
+python verificar.py
+```
+
+Verde é exit 0, vermelho é exit 1. Responde uma pergunta só: **o que este README afirma ainda bate com o dado que o repositório carrega?**
+
+1. **SQL.** Cada arquivo de `queries/` é executado contra `database/SQLite.db` e o resultado é comparado linha a linha com o CSV correspondente em `data/exports/`. É o teste que responde "esse export saiu mesmo dessa query, nesse banco?" — sem ele, os sete CSVs são só arquivos que alguém disse que vieram do SQL.
+2. **Insights.** Cada afirmação da seção abaixo vira um teste. O pico no último trimestre, as três categorias abaixo de 10% da receita, o item de categoria fraca entre os dez mais vendidos, o país que fatura mais e espera 50% a mais, a concentração nos três maiores clientes. Insight que não passa não é opinião, é erro.
+3. **Dashboard.** O `.pbix` é um zip: dá para ler quantas páginas ele tem e quantos visuais cada uma carrega sem abrir o Power BI, e conferir contra o que este README descreve.
+
+Roda offline; o banco e os exports são versionados. Também fica vermelho se uma frase for reescrita a ponto de a afirmação sumir do texto: insight editado é insight que precisa ser reverificado, não ignorado em silêncio.
+
 ## Insights e Tomada de Decisão
 Com a realização de todo o fluxo de tratamento e visuzalização de dados, foi possível identificar alguns pontos importantes, tais como:
 
@@ -47,7 +64,7 @@ Com a realização de todo o fluxo de tratamento e visuzalização de dados, foi
 - **Distribuição Geográfica**: É nítido que o transporte no continente europeu merece reformulações. Países vizinhos que possuem receitas similares ou até maiores estão recebendo seus produtos em 50% a mais do tempo. Tais ações podem ocasionar perda de cliente que gera alta receita para a empresa.
   - **Ação**: Revisão de rotas com transportadora para garantir que os países sejam abastecidos de forma uniforme.
 
-- **Alta concentração em poucos clientes**: Através da tabela de Receita por Cliente, é possível identificar que a concentração de maior parte da receita está entre três empresas.
+- **Alta concentração em poucos clientes**: Através da tabela de Receita por Cliente, os três maiores clientes concentram 25% da receita — QUICK-Stop, Ernst Handel e Save-a-lot Markets, com 8% cada. Numa distribuição uniforme entre os 89 clientes da base, os três juntos responderiam por 3%. É oito vezes mais peso do que caberia a eles.
   - **Ação 1**: Criar plano de diversificação de carteira de cliente para diminuir a concentração de clientes em até 12 meses.
   - **Ação 2**: Manter contato regular com as maiores compradoras a fim de fidelizar esses clientes
   - **Ação 3**: Prestar serviços para pequenas empresas. São mercados com potenciais inexplorados que podem vir a ser grandes empresas.
